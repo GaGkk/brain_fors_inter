@@ -35,12 +35,14 @@
   width: 59.27552795410156px;
   height: 58px;
   background-image: url(../../assets/images/Logo.png);
+  background-repeat: no-repeat;
 }
 
 .title {
   width: 96.45825958251953px;
   height: 42.69211196899414px;
   background-image: url(../../assets/images/Title.png);
+  background-repeat: no-repeat;
 }
 
 
