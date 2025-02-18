@@ -1,3 +1,6 @@
+@import url("../../assets/styles/color.css");
+@import url("../../assets/styles/text.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -65,7 +68,7 @@ body {
 }
 
 .content_block {
-  position: relative;
+  position: sticky;
   z-index: 1000;
   padding-bottom: 85px;
   display: flex;
@@ -125,4 +128,33 @@ body {
 
 .left_img {
   margin-right: 40px;
+}
+
+.contact-us_containet{
+  position: sticky;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: end;
+}
+
+.contact-us_button{
+  text-decoration: none;
+  padding-right: 598px;
+  margin-bottom: 100px;
+  color: var(--third-text-color);
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-us_arrow{
+  width: 22px;
+  height: auto;
+  background: url(../../assets/images/decorations/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 5px;
 }
