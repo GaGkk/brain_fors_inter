@@ -45,16 +45,15 @@
   background-repeat: no-repeat;
 }
 
-
 .nav {
-width: 410px;
-height: 14px;
-font-size: 12px;
-font-weight: 500;
-font-family: 'Raleway Medium';
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-padding-top: 31px;
-padding-bottom: 13px;
+  width: 410px;
+  height: 14px;
+  font-size: var(--header-text-size);
+  font-weight: var(--header-font-weight);
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 31px;
+  padding-bottom: 13px;
 }
