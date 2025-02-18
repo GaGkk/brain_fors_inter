@@ -1,11 +1,128 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
 }
 
-.header_container{
-    width: 100px;
-    height: 100px;
-    background-color: red;
+.test {
+  margin: 0;
+  padding: 0;
+}
+
+#header_container {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.decoration_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+}
+
+.vec_1 {
+  background: url(../../assets/images/decorations/vector.svg);
+}
+.vec_2 {
+  margin-top: 165px;
+  background: url(../../assets/images/decorations/vector_2.svg);
+}
+
+.vector {
+  width: 75%;
+  height: 1127px;
+  display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content_container {
+  width: 78%;
+}
+
+.content_container > .content_block {
+  margin-top: 140px;
+}
+
+.content_container > .content_block ~ .content_block {
+  margin-top: 0;
+}
+
+.content_block {
+  position: relative;
+  z-index: 1000;
+  padding-bottom: 85px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* justify-content: space-between; */
+  font-family: "Raleway Black";
+}
+
+.title {
+  margin-bottom: 12px;
+}
+
+.text {
+  margin-top: 10px;
+}
+
+.right-text-image{
+    align-items: center;
+}
+
+.only-text {
+  justify-content: center;
+}
+
+.only-text-block {
+    width: 80%;
+}
+
+.only-text-block > p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+    .img_container {
+  margin: 0;
+  padding: 0;
+}
+
+.img_1 {
+  margin-left: 40px;
+  width: 774px;
+  height: 628px;
+}
+
+.img_2 {
+  width: 774px;
+  height: 436px;
+  object-fit: cover;
+}
+
+.img_3 {
+  width: 686px;
+  height: 574px;
+  object-fit: cover;
+}
+
+.left_img {
+  margin-right: 40px;
 }
