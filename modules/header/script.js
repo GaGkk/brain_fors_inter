@@ -6,7 +6,7 @@ const navigation = [
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
-    const navElement = document.querySelector(".nav");
+    const navElement = document.querySelector(".header-nav");
     if (navElement) {
         navElement.innerHTML = navigation
             .map(item => `<a href="${item.link}">${item.text}</a>`)
