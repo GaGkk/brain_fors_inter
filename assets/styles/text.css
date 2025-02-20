@@ -1,8 +1,12 @@
 :root {
   --font-family: "Raleway Medium";
   --title-text-size: 50px;
+  --subtitle-text-size: 28px;
   --regular-text-size: 16px;
   --header-text-size: 16px;
   --header-font-weight: 500;
   --title-font-weight: 900;
+  --subtitle-font-weight: 700;
+  --regular-font-weight: 400;
+  --regular-line-height: 18.78px;
 }
