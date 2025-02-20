@@ -13,16 +13,16 @@ const socials = [
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
-    const navElement = document.querySelector(".nav");
-    const navSocialsElement = document.querySelector(".socials_nav");
+    const navElement = document.querySelector(".footer-nav");
+    const navSocialsElement = document.querySelector(".footer-socials_nav");
     if (navElement) {
         navElement.innerHTML = navigation
-            .map(item => `<a href="${item.link}" class="nav_button">${item.text}</a>`)
+            .map(item => `<a href="${item.link}" class="footer-nav_button">${item.text}</a>`)
             .join("");
     }
     if (navSocialsElement) {
         navSocialsElement.innerHTML = socials
-            .map(item => `<a href="${item.link}" class="socials_logo" style="background-image: url('${item.icon}');"></a>`)
+            .map(item => `<a href="${item.link}" class="footer-socials_logo" style="background-image: url('${item.icon}');"></a>`)
             .join("");
     }
 });
