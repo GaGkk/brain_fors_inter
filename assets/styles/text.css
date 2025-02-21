@@ -10,3 +10,8 @@
   --regular-font-weight: 400;
   --regular-line-height: 18.78px;
 }
+
+@font-face {
+  font-family: "Raleway Medium";
+  src: url(../fonts/Raleway-Medium.ttf);
+}
