@@ -217,12 +217,19 @@ body {
   font-family: "Raleway Black";
 }
 
+/* .text_container{} */
+
 .title {
+  font-size: var(--title-text-size);
+  font-weight: var(--header-font-weight);
   margin-bottom: 12px;
 }
 
 .text {
   margin-top: 10px;
+  font-size: var(--regular-text-size);
+  font-weight: var(--regular-font-weight);
+  
 }
 
 .right-text-image{

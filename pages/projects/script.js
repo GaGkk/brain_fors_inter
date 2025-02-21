@@ -1,8 +1,9 @@
 const navigation = [
     { id: 1, slug: "about_us", text: "О НАС", link: "../../pages/about-us/about-us.html" },
     { id: 2, slug: "services", text: "УСЛУГИ", link: "../../pages/services/services.html" },
-    { id: 3, slug: "projects", text: "ПРОЕКТЫ", link: "../../pages/projects/projects.html" },
-    { id: 4, slug: "contacts", text: "КОНТАКТЫ", link: "../../pages/contacts/contacts.html" },
+    { id: 3, slug: "projects", text: "ПРОЕКТЫ", link: "../../pages/projects/projects.html" }, 
+    { id: 4, slug: "news", text: "НОВОСТИ", link: "../../pages/news/news.html" },
+    { id: 5, slug: "contacts", text: "КОНТАКТЫ", link: "../../pages/contacts/contacts.html" },
 ];
 
 const socials = [
@@ -13,7 +14,7 @@ const socials = [
 ];
 
 
-function headerCall(){
+function headerCall() {
     const navElement = document.querySelector(".header-nav");
     if (navElement) {
         navElement.innerHTML = navigation
@@ -22,7 +23,7 @@ function headerCall(){
     }
 }
 
-function footerCall(){
+function footerCall() {
     const navElement = document.querySelector(".footer-nav");
     const navSocialsElement = document.querySelector(".footer-socials_nav");
     if (navElement) {
@@ -39,6 +40,6 @@ function footerCall(){
 
 
 document.addEventListener("DOMContentLoaded", function () {
-headerCall()
-footerCall()
+    headerCall()
+    footerCall()
 });

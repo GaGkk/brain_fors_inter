@@ -2,7 +2,8 @@ const navigation = [
     { id: 1, slug: "about_us", text: "О НАС", link: "../../pages/about-us/about-us.html" },
     { id: 2, slug: "services", text: "УСЛУГИ", link: "../../pages/services/services.html" },
     { id: 3, slug: "projects", text: "ПРОЕКТЫ", link: "../../pages/projects/projects.html" },
-    { id: 4, slug: "contacts", text: "КОНТАКТЫ", link: "../../pages/contacts/contacts.html" },
+    { id: 4, slug: "news", text: "НОВОСТИ", link: "../../pages/news/news.html" },
+    { id: 5, slug: "contacts", text: "КОНТАКТЫ", link: "../../pages/contacts/contacts.html" },
 ];
 
 const socials = [
