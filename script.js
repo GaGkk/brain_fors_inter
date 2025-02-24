@@ -46,6 +46,13 @@ const socials = [
     { id: 4, description: "whatsapp", link: "https://www.whatsapp.com", icon: "./assets/images/socials/WAPP.svg" },
 ];
 
+const blockOneSocials = [
+    { id: 1, description: "facebook", link: "https://facebook.com", icon: "./assets/images/socials/FB_W.svg" },
+    { id: 2, description: "instagram", link: "https://www.instagram.com", icon: "./assets/images/socials/INST_W.svg" },
+    { id: 3, description: "vkontakte", link: "https://vk.com", icon: "./assets/images/socials/VK_W.svg" },
+    { id: 4, description: "whatsapp", link: "https://www.whatsapp.com", icon: "./assets/images/socials/WAPP_W.svg" },
+];
+
 
 function headerCall() {
     const navElement = document.querySelector(".header-nav");
@@ -71,8 +78,18 @@ function footerCall() {
     }
 }
 
+function blockOneCall() {
+    const navSocialsElement = document.querySelector(".block_1__socials_nav");
+    if (navSocialsElement) {
+        navSocialsElement.innerHTML = blockOneSocials
+            .map(item => `<a href="${item.link}" class="block_1__socials_logo" style="background-image: url('${item.icon}');"></a>`)
+            .join("");
+    }
+}
+
 
 document.addEventListener("DOMContentLoaded", function () {
     headerCall()
     footerCall()
+    blockOneCall()
 });
