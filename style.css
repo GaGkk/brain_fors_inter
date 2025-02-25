@@ -459,3 +459,10 @@
   width: 574px;
   height: 526px;
 }
+
+.block_4__vektor_container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
