@@ -120,9 +120,8 @@ function footerCall(){
     }
 }
 
-
 document.addEventListener("DOMContentLoaded", function () {
-    if (window.screen.width >= 1000) {
+    if (window.screen.width >= 1024) {
         navCall()
     } else {
         navButton()
