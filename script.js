@@ -34,7 +34,7 @@
 const navigation = [
     { id: 1, slug: "about_us", text: "О НАС", link: "./pages/about-us/about-us.html" },
     { id: 2, slug: "services", text: "УСЛУГИ", link: "./pages/services/services.html" },
-    { id: 3, slug: "projects", text: "ПРОЕКТЫ", link: "./pages/projects/projects.html" }, 
+    { id: 3, slug: "projects", text: "ПРОЕКТЫ", link: "./pages/projects/projects.html" },
     { id: 4, slug: "news", text: "НОВОСТИ", link: "./pages/news/news.html" },
     { id: 5, slug: "contacts", text: "КОНТАКТЫ", link: "./pages/contacts/contacts.html" },
 ];
@@ -52,6 +52,26 @@ const blockOneSocials = [
     { id: 3, description: "vkontakte", link: "https://vk.com", icon: "./assets/images/socials/VK_W.svg" },
     { id: 4, description: "whatsapp", link: "https://www.whatsapp.com", icon: "./assets/images/socials/WAPP_W.svg" },
 ];
+
+const clientLogos = [
+    { id: 1, path: "client-site", path: "./assets/images/clients_logo/image_001.png" },
+    { id: 2, path: "client-site", path: "./assets/images/clients_logo/image_002.png" },
+    { id: 3, path: "client-site", path: "./assets/images/clients_logo/image_003.png" },
+    { id: 4, path: "client-site", path: "./assets/images/clients_logo/image_004.png" },
+    { id: 5, path: "client-site", path: "./assets/images/clients_logo/image_005.png" },
+    { id: 6, path: "client-site", path: "./assets/images/clients_logo/image_006.png" },
+    { id: 7, path: "client-site", path: "./assets/images/clients_logo/image_007.png" },
+    { id: 8, path: "client-site", path: "./assets/images/clients_logo/image_008.png" },
+    { id: 9, path: "client-site", path: "./assets/images/clients_logo/image_009.png" },
+    { id: 10, path: "client-site", path: "./assets/images/clients_logo/image_010.png" },
+    { id: 11, path: "client-site", path: "./assets/images/clients_logo/image_011.png" },
+    { id: 12, path: "client-site", path: "./assets/images/clients_logo/image_012.png" },
+    { id: 13, path: "client-site", path: "./assets/images/clients_logo/image_013.png" },
+    { id: 14, path: "client-site", path: "./assets/images/clients_logo/image_014.png" },
+    { id: 15, path: "client-site", path: "./assets/images/clients_logo/image_015.png" },
+    { id: 16, path: "client-site", path: "./assets/images/clients_logo/image_016.png" },
+    { id: 17, path: "client-site", path: "./assets/images/clients_logo/image_017.png" },
+]
 
 
 function headerCall() {
@@ -87,9 +107,19 @@ function blockOneCall() {
     }
 }
 
+function clientLogoCall() {
+    const logoContainerElement = document.querySelector(".block_4__logos_container")
+    if (logoContainerElement) {
+        logoContainerElement.innerHTML = clientLogos
+            .map(item => `<img class="logo_item_${item.id}" src="${item.path}" alt="">`)
+            .join("");
+    }
+}
+
 
 document.addEventListener("DOMContentLoaded", function () {
     headerCall()
     footerCall()
     blockOneCall()
+    clientLogoCall()
 });
