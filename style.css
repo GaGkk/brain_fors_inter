@@ -91,7 +91,7 @@
   padding-top: 60px;
   padding-bottom: 67px;
   position: relative;
-  z-index: 999;
+  z-index: 1100;
 }
 
 .footer_container {
@@ -152,6 +152,39 @@
   background-position: center;
   background-repeat: no-repeat;
   margin-left: 12px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    row-gap: 50px;
+  }
+
+  .footer_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    row-gap: 50px;
+  }
+
+  .footer-logo_container {
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 14.27px;
+  }
+
+  .footer-nav {
+    height: auto;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    row-gap: 10px;
+  }
 }
 /* -----------------------------------FOOTER */
 
@@ -404,14 +437,14 @@
   background-repeat: no-repeat;
 }
 
-.block_3__content_body{
+.block_3__content_body {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.block_3__content_arrows{
+.block_3__content_arrows {
   width: 66px;
   display: flex;
   flex-direction: column;
@@ -419,15 +452,15 @@
   justify-content: center;
 }
 
-.block_3__content_arrows-left{
+.block_3__content_arrows-left {
   justify-content: space-between;
 }
 
-.block_3__content_circle_block{
+.block_3__content_circle_block {
   display: flex;
   flex-direction: column;
 }
-.block_3__content_circle{
+.block_3__content_circle {
   background-color: #ffffff50;
   width: 9px;
   height: 9px;
@@ -436,11 +469,11 @@
   cursor: pointer;
 }
 
-.block_3__content_circle_active{
-  background-color: #FFFFFF;
+.block_3__content_circle_active {
+  background-color: #ffffff;
 }
 
-.block_3__content_arrow{
+.block_3__content_arrow {
   cursor: pointer;
   background-repeat: no-repeat;
   width: 65px;
@@ -448,19 +481,19 @@
   cursor: pointer;
 }
 
-.block_3__content_arrow-left{
+.block_3__content_arrow-left {
   background-image: url(./assets/images/decorations/arrow_left_65px_W.svg);
 }
-.block_3__content_arrow-right{
+.block_3__content_arrow-right {
   background-image: url(./assets/images/decorations/arrow_right_65px_W.svg);
 }
 
-.block_3__content_block img{
+.block_3__content_block img {
   width: 574px;
   height: 526px;
 }
 
-.block_4__vektor_container{
+.block_4__vektor_container {
   width: 100%;
   display: flex;
   flex-direction: column;
